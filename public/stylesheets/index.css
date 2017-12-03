@@ -1,0 +1,311 @@
+/* ==================================================== */
+/* ================== LANDING PAGE ==================== */
+/* ==================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url(https://source.unsplash.com/tRGwX1HcTd4);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+
+.navbar {
+   background-color: transparent;
+   border: none;
+   font-size: 20px
+
+}
+
+.navbar.navbar-default {
+    color: white;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav li a {
+    color: white;
+    font-weight: 100;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+}
+
+.navbar-brand {
+    font-size: 20px;
+   
+}
+
+.logo{
+    display: inline-block;
+    height: 80px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+
+.hero-text-box{
+    font-weight: 100;
+    position:absolute;
+    width: 1140px;
+    top: 30%;
+    left:20%;
+    text-transform: uppercase;
+    color: white;
+}
+
+#hero-text{
+    font-weight: 100;
+}
+
+.btn {
+    background-color: transparent;
+    margin: 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 100;
+    text-transform: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+#selected {
+    background: #56c645;
+    border: none;
+}
+
+#show-more:hover {
+    background: #dddddd;
+    border: none; 
+}
+
+#show-more {
+    border: 1px solid white;
+}
+
+/* ================== Section Features ================ */
+/* ==================================================== */
+
+.section-features{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2{
+    text-transform: uppercase;
+    
+}
+
+#copy-heading{
+    margin-top: 65px;
+}
+
+.features-copy{
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 35px;
+    letter-spacing: 1px;
+}
+
+hr{
+      border-width: 4px;
+      width: 10%;
+      margin: 0 auto;
+      margin-top : 35px;
+      color: black;
+}
+
+/* ================== Campgrounds Show ================ */
+/* ==================================================== */
+
+.campgrounds-showcase{
+    width: 100%; 
+    overflow: hidden; 
+    
+}
+
+#photo{
+    height: 300px;
+    padding: 0;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+
+    }
+
+
+.show-campsites{
+    margin-top: 150px;
+    overflow: hidden; 
+}
+
+
+
+.photo-box{
+    overflow: hidden;
+    display: inline;
+   
+}
+
+/* =================== Call to action  ================ */
+/* ==================================================== */
+
+.section-call-to-action {
+    text-align: center;
+    margin-top: 0px;
+    padding: 50px 0 120px 0;
+    line-height: 55px;
+    background-color: #efefef;
+    
+}
+
+/* ==================== Contact Form  ================= */
+/* ==================================================== */
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font-family: 'Lato', sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 30%;
+  border: none;
+  border-radius: 50px;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+#sign-up-btn:hover {
+    background: #3e9131;
+    color: #fff;
+}
+
+#sign-up-btn{
+    background: #56c645;
+}
+
+#sign-up-btn:hover {
+    background: #3e9131;
+    color: #fff;
+    border: none;
+}
+

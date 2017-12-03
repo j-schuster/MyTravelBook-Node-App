@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/index.css">
+        <title>YelpCamp</title>
+    </head>
+    <body>
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+
+ <!-- NAVBAR -->
+ <header>
+ <nav class="navbar navbar-default">
+        <div class="navbar-header">
+             <img src = "/landing-page-resources/logo-white.png" class="logo">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">My Travel Book</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+              <li><a href="/campgrounds">Home</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Sign Up</a></li>
+         </ul>
+        </div>
+ </nav>
+ <div class="hero-text-box">
+     <h1 id="hero-text">So you love the outdoors?<br>Plan your next hike!</h1>
+     <a class="btn btn-default btn-lg" id="selected" href="#">Sign Me Up!</a>
+     <a class="btn btn-default btn-lg" id="show-more" href="#">Show me more!</a>
+ </div>
+</header>
+<!-- NAVBAR --> 
+<section class="section-features" id="features">
+    <div class="row">
+    <h2 id="copy-heading">Learn more about whats out there</h2>
+    <hr>
+    <p class="features-copy">Welcome to My Travel Book, we are a community that loves the outdoors.<br> 
+    This is a place where we can recommend hiking trails,<br> camping sites and talk about our experiences,
+    collectively embracing the hiking culture in the world.<br> We are happy you are here, sign up now and learn more.</p>
+    </div>
+</section>
+<section class="show-campsites">
+    <div class="campgrounds-showcase row">
+        <div class="photo-box"><img id="photo" class="cg-show col-lg-3" src="/landing-page-resources/1.jpg"></div>
+        <div class="photo-box"><img id="photo" class="cg-show col-lg-3" src="/landing-page-resources/2.jpg"></div>
+        <div class="photo-box"><img id="photo" class="cg-show col-lg-3" src="/landing-page-resources/3.jpg"></div>
+        <div class="photo-box"><img id="photo" class="cg-show col-lg-3" src="/landing-page-resources/4.jpg"></div>
+    </div>
+        <div class="campgrounds-showcase row">
+        <span><img id="photo" class="cg-show col-lg-3" src="/landing-page-resources/5.jpeg"></span>
+        <span><img id="photo" class="cg-show col-lg-3" src="/landing-page-resources/6.jpg"></span>
+        <span><img id="photo" class="cg-show col-lg-3" src="/landing-page-resources/7.jpg"></span>
+        <span><img id="photo" class="cg-show col-lg-3" src="/landing-page-resources/8.jpg"></span>
+    </div>
+</section>
+<section class="section-call-to-action" id="call-to">
+    <div class="row">
+    <h2 id="copy-heading">What are you waiting for?</h2>
+        <hr>
+    <p class="features-copy">If you're excited about joining, sign up now and discover your next dream trip</p>
+    <p class="features-copy"> Feel free to contact us if you have any questions</p>
+    <a class="btn btn-default btn-lg" id="sign-up-btn" href="/register">Sign Me Up!</a>
+    </div>
+</section> 
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>We're happy to hear from you</h3>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+ </body>  
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 	<!--	<a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a> -->

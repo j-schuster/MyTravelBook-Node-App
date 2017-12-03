@@ -1,0 +1,99 @@
+/* ==================================================== */
+/* =================== APPLICATION ==================== */
+/* ==================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+.thumbnail img {
+    width: 100%;
+   
+}
+.thumbnail {
+    padding: 0;
+}
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+
+#nav-bar {
+    background: #1b1d21;
+    margin: 0;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+#delete-form {
+display:inline;    
+}
+.delete-form-comment {
+    display: inline;
+}
+
+#map{
+    height: 400px;
+    width: 100%;
+    
+}
+
+#camp-thumb{
+    height: 200px;
+    width: 100%;
+    box-shadow: 5px 5px 25px 0px rgba(30,20,20,0.5);
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(30,20,20, .5), rgba(30,20,20, .5)), url(https://farm1.staticflickr.com/86/233614891_40b0d239d6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    color: #fff;
+    box-shadow: 5px 5px 25px 0px rgba(30,20,20,0.5);
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.hero-main h1 {
+    font-weight: 200;
+}
+
+.hero-main .btn {
+    background-color: #c0392b;
+    border-style: none;
+    transition: ease-in;
+}
+
+.hero-main .btn:hover {
+    transform: scale(1.1);
+}
+
+.c-view {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.thumbnail {
+    border: none;
+    background-color: #777;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.show-main {
+    margin-top: 45px;
+}
+
+.thumbnail .btn {
+    margin: 10px;
+}

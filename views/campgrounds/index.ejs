@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+
+      
+<div class="hero-main jumbotron">
+            
+            <h1>Welcome to My Travel Book</h1>
+            <p>Documenting our travels to learn from each other</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Destination</a>  
+            </p>
+            
+    </div>   
+ 
+    <div class="c-view">
+        <h1>View our destinations</h1>
+    </div>
+    
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+     <% campgrounds.forEach(function(campground){ %>
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail card">
+                       <img id="camp-thumb" src="<%= campground['image'] %>"> 
+                       <div class="caption">
+                            <h4 style="font-weight: 300"><%= campground['name'] %></h4> 
+                       </div>
+                           <p>
+                               <a style="font-weight: 200" href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                           </p>
+                  </div>
+              </div>
+      <% }); %>
+  </div>
+
+    
+  
+
+
+ <% include ../partials/footer %>
